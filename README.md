@@ -42,16 +42,18 @@ end
 Post a request to the ocr endpoint with the path to an image to get back a raw response from the api (post made using Faraday gem)
 ```ruby
 client = SemaApiRuby.new
-_file_path = '/path/to/your/image.jpg'
-client.post_ocr_image(_file_path)
+file_path = '/path/to/your/image.jpg'
+
+client.post_ocr_image(file_path)
 # => #<Faraday::Response:0x007fcb641591e0 ...
 ```
 
 Use this method to both post to the ocr endpoint and return an text to image ratio
 ```ruby
 client = SemaApiRuby.new
-_file_path = '/path/to/your/image.jpg'
-client.text_to_image_ratio(_file_path)
+file_path = '/path/to/your/image.jpg'
+
+client.text_to_image_ratio(file_path)
 # => 0.2123
 ```
 
