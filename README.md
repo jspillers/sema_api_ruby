@@ -55,6 +55,22 @@ client.text_to_image_ratio(_file_path)
 # => 0.2123
 ```
 
+## Testing
+
+Copy the sample dotenv file to .env
+```
+$> cp .env.sample .env
+```
+
+Update it with a testing API token if you want to run specs against the live API rather than against the network stubs
+
+Run the specs
+```
+$> bundle exec rspec spec
+```
+
+This gem uses a testing gem called VCR to record and replay HTTP requests. If the actual API has changed you will need to delete all "casettes" located in ```spec/cassettes/``` so that requests will run against the live API
+
 ## Contributing
 
 1. Fork it ( https://github.com/[my-github-username]/sema_api_ruby/fork )
