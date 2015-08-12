@@ -43,7 +43,7 @@ module SemaApiRuby
       @conn_with_auth ||= begin
         conn.headers['X-api-key'] = access_token
         conn.headers['User-Agent'] = user_agent
-        conn.headers['Content-Type'] = 'multipart/form-data'
+        conn.headers['Content-Type'] = content_type
         conn
       end
     end

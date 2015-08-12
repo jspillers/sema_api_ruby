@@ -1,3 +1,5 @@
+require 'json'
+
 module SemaApiRuby
 
   class Client
@@ -29,7 +31,7 @@ module SemaApiRuby
       end
 
       def post_ocr_image(_file_path)
-        post_body = SemaApiRuby.default_ocr_options.merge(
+        post_body = ocr_settings.merge(
           file: Faraday::UploadIO.new(_file_path, mime_type(_file_path))
         )
         conn_with_auth.post("/api/#{api_version}/ocr/", post_body)

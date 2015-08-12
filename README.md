@@ -1,8 +1,6 @@
 # SemaApiRuby
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/sema_api_ruby`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+Ruby client for Sema Media Data's image OCR API. Used for getting an estimated text to image ratio for validating images before being submitted to Facebook Ads.
 
 ## Installation
 
@@ -22,13 +20,40 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Configure the client by providing an API token. Also tweak the configuration for any of the OCR settings.
 
-## Development
+```ruby
+SemaApiRuby.configure do |config|
+  config.access_token = 'myaccesstokenhere'
 
-After checking out the repo, run `bin/setup` to install dependencies. Then, run `bin/console` for an interactive prompt that will allow you to experiment.
+  #optional - below are the defaults
+  config.ocr_settings = {
+    lang: 'en',      # english language
+    outform: 'json', # output as json
+    sp: 'True',      # perform spellcheck
+    mh: 'True',      # multi-hypothesis... increases accuracy at slight performance cost
+    df: 'True',      # dictionary based word filtering
+    noempty: 'True'  # only return detected objects that are not empty
+  }
+end
 
-To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release` to create a git tag for the version, push git commits and tags, and push the `.gem` file to [rubygems.org](https://rubygems.org).
+```
+
+Post a request to the ocr endpoint with the path to an image to get back a raw response from the api (post made using Faraday gem)
+```ruby
+client = SemaApiRuby.new
+_file_path = '/path/to/your/image.jpg'
+client.post_ocr_image(_file_path)
+# => #<Faraday::Response:0x007fcb641591e0 ...
+```
+
+Use this method to both post to the ocr endpoint and return an text to image ratio
+```ruby
+client = SemaApiRuby.new
+_file_path = '/path/to/your/image.jpg'
+client.text_to_image_ratio(_file_path)
+# => 0.2123
+```
 
 ## Contributing
 
