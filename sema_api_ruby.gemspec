@@ -9,8 +9,8 @@ Gem::Specification.new do |spec|
   spec.authors       = ['Jrod']
   spec.email         = ['jarrod@jtms.net']
 
-  spec.summary       = %q{}
-  spec.description   = %q{}
+  spec.summary       = %q{Ruby client for Sema Media Data image OCR API}
+  spec.description   = spec.summary
   spec.homepage      = 'https://github.com/jspillers/sema_api_ruby'
 
   # Prevent pushing this gem to RubyGems.org by setting 'allowed_push_host', or
