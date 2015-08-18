@@ -1672,7 +1672,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Wed, 12 Aug 2015 20:06:32 GMT
+      - Tue, 18 Aug 2015 20:49:20 GMT
       Server:
       - Apache/2.2.22 (Debian)
       Vary:
@@ -1687,10 +1687,10 @@ http_interactions:
       - text/html; charset=utf-8
     body:
       encoding: ASCII-8BIT
-      string: '{"frames":[{"framename":"free-shipping-cm_e1Jaxxu","results":[{"x":0,"y":294,"width":90,"height":15,"text":"Ii"},{"x":70,"y":183,"width":251,"height":34,"text":"FL
+      string: '{"frames":[{"framename":"free-shipping-cm_cf2HzVn","results":[{"x":0,"y":294,"width":90,"height":15,"text":"Ii"},{"x":70,"y":183,"width":251,"height":34,"text":"FL
         1 L R 1"},{"x":368,"y":174,"width":232,"height":43,"text":"mm"},{"x":3,"y":98,"width":661,"height":70,"text":"Free
         Shipping"},{"x":335,"y":73,"width":255,"height":28,"text":"Everyday"},{"x":379,"y":35,"width":206,"height":29,"text":"Low
         Prices"},{"x":88,"y":22,"width":181,"height":67,"text":"The F"},{"x":381,"y":9,"width":205,"height":28,"text":"EverydaY"}]}]}'
     http_version: 
-  recorded_at: Wed, 12 Aug 2015 19:58:11 GMT
+  recorded_at: Tue, 18 Aug 2015 20:40:44 GMT
 recorded_with: VCR 2.9.3

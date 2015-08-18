@@ -985,7 +985,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Wed, 12 Aug 2015 20:02:36 GMT
+      - Tue, 18 Aug 2015 20:49:26 GMT
       Server:
       - Apache/2.2.22 (Debian)
       Vary:
@@ -995,12 +995,12 @@ http_interactions:
       Allow:
       - POST, PUT, OPTIONS
       Content-Length:
-      - '350'
+      - '343'
       Content-Type:
       - text/html; charset=utf-8
     body:
       encoding: ASCII-8BIT
-      string: '{"frames":[{"framename":"couches_LWjEto8","results":[{"x":85,"y":528,"width":69,"height":12,"text":"mum
+      string: '{"frames":[{"framename":"couches","results":[{"x":85,"y":528,"width":69,"height":12,"text":"mum
         Hour"},{"x":51,"y":510,"width":124,"height":18,"text":"1 Nikaniki"},{"x":65,"y":464,"width":116,"height":13,"text":"cow
         us Now"},{"x":67,"y":453,"width":101,"height":12,"text":"ass us wan"},{"x":45,"y":437,"width":157,"height":13,"text":"waxes
         new or we re"},{"x":67,"y":323,"width":104,"height":15,"text":"HAS A"},{"x":67,"y":307,"width":111,"height":15,"text":"FLOOR
@@ -1008,5 +1008,5 @@ http_interactions:
         cm"},{"x":21,"y":116,"width":60,"height":15,"text":"yum"},{"x":82,"y":44,"width":80,"height":15,"text":"ANYWHERE"},{"x":87,"y":28,"width":67,"height":16,"text":"some"},{"x":84,"y":12,"width":78,"height":15,"text":"we
         rent"}]}]}'
     http_version: 
-  recorded_at: Wed, 12 Aug 2015 19:54:18 GMT
+  recorded_at: Tue, 18 Aug 2015 20:40:53 GMT
 recorded_with: VCR 2.9.3

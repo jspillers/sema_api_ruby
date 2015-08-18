@@ -1499,7 +1499,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Wed, 12 Aug 2015 19:59:35 GMT
+      - Tue, 18 Aug 2015 20:49:25 GMT
       Server:
       - Apache/2.2.22 (Debian)
       Vary:
@@ -1509,12 +1509,12 @@ http_interactions:
       Allow:
       - POST, PUT, OPTIONS
       Content-Length:
-      - '35'
+      - '61'
       Content-Type:
       - text/html; charset=utf-8
     body:
       encoding: ASCII-8BIT
-      string: '{"frames":[]}]}'
+      string: '{"frames":[{"framename":"no_text","results":[]}]}'
     http_version: 
-  recorded_at: Wed, 12 Aug 2015 19:51:11 GMT
+  recorded_at: Tue, 18 Aug 2015 20:40:46 GMT
 recorded_with: VCR 2.9.3

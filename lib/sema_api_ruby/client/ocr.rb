@@ -23,7 +23,7 @@ module SemaApiRuby
       # when an image does not have any text results. Remove when they start returning
       # valid json
       rescue JSON::ParserError => e
-        if e.message =~ /unexpected token at '\]\}'/
+        if e.message =~ /unexpected token at '(\]\})+'/
           0.0
         else
           raise e

@@ -19441,7 +19441,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Wed, 12 Aug 2015 19:59:44 GMT
+      - Tue, 18 Aug 2015 20:49:39 GMT
       Server:
       - Apache/2.2.22 (Debian)
       Vary:
@@ -19451,12 +19451,12 @@ http_interactions:
       Allow:
       - POST, PUT, OPTIONS
       Content-Length:
-      - '110'
+      - '103'
       Content-Type:
       - text/html; charset=utf-8
     body:
       encoding: ASCII-8BIT
-      string: '{"frames":[{"framename":"cfc_t2Wv34P","results":[{"x":320,"y":246,"width":18,"height":48,"text":"tx"}]}]}'
+      string: '{"frames":[{"framename":"cfc","results":[{"x":320,"y":246,"width":18,"height":48,"text":"tx"},]}]}'
     http_version: 
-  recorded_at: Wed, 12 Aug 2015 19:51:24 GMT
+  recorded_at: Tue, 18 Aug 2015 20:41:04 GMT
 recorded_with: VCR 2.9.3

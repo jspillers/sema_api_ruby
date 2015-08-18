@@ -5,7 +5,7 @@ RSpec.describe SemaApiRuby::Client::Ocr do
   let(:test_jpg_image_path) { get_test_image_path 'free-shipping-cm.jpg' }
   let(:test_png_image_path) { get_test_image_path 'cfc.png' }
 
-  context '#post_ocr_image', :vcr do
+  context '#post_ocr_image' do
 
     it 'returns 200 OK' do
       expect(api_client.post_ocr_image(test_jpg_image_path).status).to eq 200
@@ -32,11 +32,11 @@ RSpec.describe SemaApiRuby::Client::Ocr do
     end
 
     it 'returns the correct ratio for a jpg' do
-      expect(api_client.text_to_image_ratio(test_jpg_image_path)).to eq 0.0934
+      expect(api_client.text_to_image_ratio(test_jpg_image_path)).to eq 0.4688
     end
 
     it 'returns the correct ratio for a png' do
-      expect(api_client.text_to_image_ratio(test_png_image_path)).to eq 0.0025
+      expect(api_client.text_to_image_ratio(test_png_image_path)).to eq 0.0
     end
 
   end
